@@ -1,0 +1,200 @@
+fileFormatVersion: 2
+guid: 0e56ce63a42f188429189b90b2e5e5c8
+timeCreated: 1539114768
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Body
+    100002: gunpoint_mlya)))
+    100004: Gusineca_00
+    100006: Gusineca_01
+    100008: Object01
+    100010: Pseudo_Wheel
+    100012: Pseudo_Wheel01
+    100014: Rolling_ Armour_Mlya))
+    100016: //RootNode
+    100018: Wheel02
+    100020: Wheel03
+    100022: Wheel04
+    100024: Wheel05
+    100026: Wheel06
+    100028: Wheel07
+    100030: Wheel08
+    100032: Wheel09
+    100034: Wheel10
+    100036: Wheel11
+    100038: Wheel12
+    100040: Wheel13
+    100042: Wheel14
+    100044: Wheel15
+    100046: Wheel16
+    100048: "\u0421ombat_Tower"
+    400000: Body
+    400002: gunpoint_mlya)))
+    400004: Gusineca_00
+    400006: Gusineca_01
+    400008: Object01
+    400010: Pseudo_Wheel
+    400012: Pseudo_Wheel01
+    400014: Rolling_ Armour_Mlya))
+    400016: //RootNode
+    400018: Wheel02
+    400020: Wheel03
+    400022: Wheel04
+    400024: Wheel05
+    400026: Wheel06
+    400028: Wheel07
+    400030: Wheel08
+    400032: Wheel09
+    400034: Wheel10
+    400036: Wheel11
+    400038: Wheel12
+    400040: Wheel13
+    400042: Wheel14
+    400044: Wheel15
+    400046: Wheel16
+    400048: "\u0421ombat_Tower"
+    2300000: Body
+    2300002: gunpoint_mlya)))
+    2300004: Gusineca_00
+    2300006: Gusineca_01
+    2300008: Object01
+    2300010: Pseudo_Wheel
+    2300012: Pseudo_Wheel01
+    2300014: Rolling_ Armour_Mlya))
+    2300016: Wheel02
+    2300018: Wheel03
+    2300020: Wheel04
+    2300022: Wheel05
+    2300024: Wheel06
+    2300026: Wheel07
+    2300028: Wheel08
+    2300030: Wheel09
+    2300032: Wheel10
+    2300034: Wheel11
+    2300036: Wheel12
+    2300038: Wheel13
+    2300040: Wheel14
+    2300042: Wheel15
+    2300044: Wheel16
+    2300046: "\u0421ombat_Tower"
+    3300000: Body
+    3300002: gunpoint_mlya)))
+    3300004: Gusineca_00
+    3300006: Gusineca_01
+    3300008: Object01
+    3300010: Pseudo_Wheel
+    3300012: Pseudo_Wheel01
+    3300014: Rolling_ Armour_Mlya))
+    3300016: Wheel02
+    3300018: Wheel03
+    3300020: Wheel04
+    3300022: Wheel05
+    3300024: Wheel06
+    3300026: Wheel07
+    3300028: Wheel08
+    3300030: Wheel09
+    3300032: Wheel10
+    3300034: Wheel11
+    3300036: Wheel12
+    3300038: Wheel13
+    3300040: Wheel14
+    3300042: Wheel15
+    3300044: Wheel16
+    3300046: "\u0421ombat_Tower"
+    4300000: Gusineca_01
+    4300002: Body
+    4300004: Gusineca_00
+    4300006: Pseudo_Wheel
+    4300008: Pseudo_Wheel01
+    4300010: Wheel02
+    4300012: Object01
+    4300014: Wheel03
+    4300016: Wheel04
+    4300018: Wheel05
+    4300020: Wheel06
+    4300022: Wheel07
+    4300024: Wheel08
+    4300026: Wheel09
+    4300028: Wheel10
+    4300030: Wheel11
+    4300032: Wheel12
+    4300034: Wheel13
+    4300036: Wheel14
+    4300038: Wheel15
+    4300040: Wheel16
+    4300042: "\u0421ombat_Tower"
+    4300044: Rolling_ Armour_Mlya))
+    4300046: gunpoint_mlya)))
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
