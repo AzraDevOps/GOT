@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 
 public class PlayerCtrl : MonoBehaviour 
@@ -24,6 +25,12 @@ public class PlayerCtrl : MonoBehaviour
 	public Rigidbody projectile;
 	public Transform Spawnpoint;
 
+	public AudioSource audio;
+	public AudioClip TirCanon;
+	public AudioClip RotationTourelle;
+	public AudioClip MoteurCharStop;
+	public AudioClip MoteurCharDeplace;
+
 	// Flags pour le déplacement du char
 	private bool enDeplacement = false;
 	private bool marcheAvant = false;
@@ -32,6 +39,7 @@ public class PlayerCtrl : MonoBehaviour
 	void Start () 
 	{
 		TaskOnClickButtonChauffeur(); // On lance le game avec la position CHAUFFEUR par défaut
+
 	} // FIN START
 
 	// Update is called once per frame
@@ -41,6 +49,9 @@ public class PlayerCtrl : MonoBehaviour
 		// Fix d'un bug qui fait qu'on dépasse 50
 		if (moveSpeedChar > 50)
 			moveSpeedChar = 50;
+
+		if (moveSpeedChar == 0)
+			audio.PlayOneShot(MoteurCharStop, 0.1f);
 
 		if (SpwnChauffeur.active == true)
 		{
@@ -63,7 +74,8 @@ public class PlayerCtrl : MonoBehaviour
 					}
 					MyTank.transform.Translate(Vector3.forward * moveSpeedChar * Time.deltaTime); // On applique le déplacement au char
 					marcheAvant = true; // On mémorise que le char est en marche avant
-				}
+					audio.PlayOneShot(MoteurCharDeplace, 0.5f);
+			}
 
 				if (Input.GetKey(KeyCode.DownArrow)) // Si on appuie sur la touche FLECHE BAS
 				{
@@ -73,6 +85,7 @@ public class PlayerCtrl : MonoBehaviour
 					}
 					MyTank.transform.Translate(Vector3.forward * moveSpeedChar * Time.deltaTime);// On applique le déplacement au char
 					marcheAvant = false; // On mémorise que le char est en marche arrière
+					audio.PlayOneShot(MoteurCharDeplace, 0.5f);
 				}
 
 				
@@ -91,15 +104,22 @@ public class PlayerCtrl : MonoBehaviour
 								moveSpeedChar = moveSpeedChar + 0.25f; // On réduit la vitesse (de la marche arrière) de 0.25
 						}
 						MyTank.transform.Translate(Vector3.forward * moveSpeedChar * Time.deltaTime); // On applique le déplacement au char
-					}
+						audio.PlayOneShot(MoteurCharDeplace, 0.7f);
+				}
 				}
 					
 				if (Input.GetKey (KeyCode.LeftArrow)) // Tourne ton char à gauche ben
+				{ 
 					MyTank.transform.Rotate (Vector3.up, -turnSpeedChar * Time.deltaTime);
-
+					audio.PlayOneShot(MoteurCharDeplace, 0.7f);
+			}	
+				
 				if (Input.GetKey (KeyCode.RightArrow)) // Tourne ton char à drpite ben
+				{
 					MyTank.transform.Rotate (Vector3.up, turnSpeedChar * Time.deltaTime);
-
+					audio.PlayOneShot(MoteurCharDeplace, 0.7f);
+			}
+		
 		} // FIN IF CHAUFFEURCHAR
 
 		if (MaPosition == "CannonierChar") // Si le joueur est CANONIER
@@ -132,9 +152,9 @@ public class PlayerCtrl : MonoBehaviour
 
 			if (Input.GetKeyDown(KeyCode.Space))
 			{
+				audio.PlayOneShot(TirCanon, 0.9f);
 				Rigidbody clone;
 				clone = (Rigidbody)Instantiate(projectile, Spawnpoint.position, projectile.rotation);
-
 				clone.velocity = Spawnpoint.TransformDirection(Vector3.forward * 20);
 
 				Destroy(clone, 2.0f);
